@@ -1,0 +1,40 @@
+header {
+  text-align: center;
+}
+.center{
+	vertical-align: middle;
+}
+.preguntaTxt1 {
+  font-size: 89px;
+}
+.resultado {
+  font-size: 40px;
+}
+
+.preguntaTxt2 {
+  font-size: 49px;
+}
+
+.inicioBody {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.datosBody {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: left;
+}
+
+.datoss {
+  width: 50%;
+  margin: auto;
+  align-items: center;
+}
+
+.cabeceraTabla {
+  background-color: rgb(172, 45, 31);
+  color: whitesmoke;
+}

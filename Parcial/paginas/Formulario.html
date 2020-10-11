@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculador de pulsaciones</title>
+	<script src="../registrarMateria.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/estilos.css">
+</head>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active" href="../inicio.html">INICIO </a>
+				<a class="nav-item nav-link" href="../paginas/Formulario.html">REGISTRO MATERIA</a> <span
+					class="sr-only">(current)</span></a>
+			</div>
+		</div>
+	</nav>
+</header>
+<header class="tituloheader">
+	<h1 class="titulo"> <b> Materia </b></h1>
+	<br />
+</header>
+
+<body class="datosBody">
+	<div class="datoss">
+		<form>
+			<br />
+			<br />
+			<div class="form-group">
+				<label for="NombreMateria">Nombre</label>
+				<input type="text" class="form-control" id="NombreMateria">
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-sm-8">
+						<p>Primer corte</p>
+					</div>
+					<a href="FormularioNotas1.html" role="button" onclick="guardarNombreMateria()">Ver notas</a>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-8">
+						<p>Segundo corte</p>
+					</div>
+					<a href="FormularioNotas2.html" role="button" onclick="guardarNombreMateria()">Ver notas</a>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-8">
+						<p>Tercer corte</p>
+					</div>
+					<a href="FormularioNotas3.html" role="button" onclick="guardarNombreMateria()">Ver notas</a>
+				</div>
+				<br>
+				<br>
+				<div id="definitiva"></div>
+				<table class="table">
+					<tr>
+						<td>
+							<button type="button" class="btn btn-outline-danger" onclick="registrarMateria()">REGISTRAR
+								MATERIA</button>
+						</td>
+						<td>
+							<button type="button" class="btn btn-outline-danger" onclick="Guardar()">Guardar datos</button>
+						</td>
+					</tr>
+				</table>
+		</form>
+	</div>
+</body>
+
+
+</html>

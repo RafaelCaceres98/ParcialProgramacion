@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<script src="../consultar.js">  </script>
+	<title>Consulta</title>
+</head>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active" href="../inicio.html">INICIO
+					<a class="nav-item nav-link" href="../paginas/Formulario.html">REGISTRAR MATERIA</a>
+
+			</div>
+		</div>
+	</nav>
+</header>
+
+
+<body>
+	<br>
+	<button type="button" class="btn btn-outline-danger" id="consultar" onclick="llenarTabla()">Consultar</button>
+	</br>
+	<br>
+	<table class="table">
+		<thead class="cabeceraTabla">
+			<tr>
+				<th scope="col">Nombre</th>
+				<th scope="col">Primer corte</th>
+				<th scope="col">Segundo corte</th>
+				<th scope="col">Tercer corte</th>
+				<th scope="col">Definitiva</th>
+			</tr>
+		</thead>
+		<tbody id="datos">
+
+		</tbody>
+	</table>
+</body>
+<script>
+
+</script>
+
+</html>

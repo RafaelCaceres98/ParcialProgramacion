@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculador de pulsaciones</title>
+	<script src="../registrarMateria.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/estilos.css">
+</head>
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active" href="../inicio.html">INICIO </a>
+				<a class="nav-item nav-link" href="../paginas/Formulario.html">REGISTRO MATERIA</a> <span
+					class="sr-only">(current)</span></a>
+			</div>
+		</div>
+	</nav>
+</header>
+<header class="tituloheader">
+	<h1 class="titulo"> <b> REGISTRAR NOTAS SEGUNDO CORTE</b></h1>
+	<br />
+</header>
+
+<body class="datosBody">
+	<div class="datoss">
+		<form>
+			<br />
+			<br />
+			<div class="row">
+				<div class="col-sm-3">
+					<label for="Nota">Descripcion</label>
+				</div>
+				<div class="col-sm-3">
+					<label for="Valor">Valor</label>
+				</div>
+				<div class="col-sm-3">
+					<label for="Porcentaje">%</label>
+				</div>
+				<div class="col-sm-1">
+					<label>+</label>
+				</div>
+				<div class="col-sm-1">
+					<label>-</label>
+				</div>
+			</div>
+			<div id="padre">
+				<div class="row">
+					<div class="col-sm-3">
+						<input type="text" class="form-control" id="Nombre">
+					</div>
+					<div class="col-sm-3">
+						<input type="number" class="form-control" id="Valor">
+					</div>
+					<div class="col-sm-3">
+						<input type="number" class="form-control" id="Porcentaje">
+					</div>
+					<div class="col-sm-1">
+						<button onclick="return nuevaNota()" role="button" class="btn btn-success">+</button>
+					</div>
+					<div class="col-sm-1">
+						<button onclick="eliminarNota()" id="idNotaEliminar" class="btn btn-danger">-</button>
+					</div>
+				</div>
+				<br>
+			</div>
+			<table class="table">
+				<tr>
+					<td>
+						<button type="button" class="btn btn-outline-danger" onclick="agregarNotasSC()">REGISTRAR NOTAS</button>
+					</td>
+					<td>
+						<button type="button" class="btn btn-outline-danger" onclick="Guardar()">Guardar datos</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>
